@@ -114,12 +114,20 @@ main{max-width:850px;margin:0 auto;padding:20px 14px 48px}.hero{background:var(-
 <p>Si aparecen varias combinaciones, corresponden a distintas versiones: verificá cuál tenés. La versión del sistema instalada actualmente se comprueba en el propio teléfono, porque puede haberse actualizado.</p>
 <p>GSMArena es una fuente independiente. Cuando sea posible, contrastá los datos con la información oficial del fabricante.</p>
 </div></details></section>
-<section class="card"><h2>¡Cada dato que descubriste es un avance!</h2><p>Lo que quedó pendiente podés investigarlo con ayuda en otro momento.</p><div class="actions"><button class="btn primary" id="savePhoneBtn" type="button">Guardar mi ficha</button><button class="btn secondary" id="printPhoneBtn" type="button">Imprimir mi ficha</button><p id="saveStatus" role="status" aria-live="polite"></p><a class="btn secondary" href="#juego">Volver al juego</a></div></section></div>
+<section class="card"><h2>¡Cada dato que descubriste es un avance!</h2><p>Lo que quedó pendiente podés investigarlo con ayuda en otro momento.</p><div class="actions"><button class="btn primary" id="savePhoneBtn" type="button">Guardar mi ficha</button><button class="btn secondary" id="printPhoneBtn" type="button">Imprimir mi ficha</button><p id="saveStatus" role="status" aria-live="polite"></p><a class="btn secondary" href="#juego">Volver al juego</a><a class="btn primary" href="#final">Finalizar actividad</a></div></section></div>
 
 
 
 
 
+<section class="card" id="finished" hidden aria-labelledby="finishedTitle">
+<h2 id="finishedTitle" tabindex="-1">¡Gracias por participar!</h2>
+<p>Cada paso que diste te ayuda a conocer mejor tu celular.</p>
+<p>Si querés conservar tu ficha, guardala antes de cerrar.</p>
+<div class="actions"><button class="btn primary" type="button" id="saveFinishedBtn">Guardar mi ficha</button><a class="btn secondary" href="#celular">Volver a mi ficha</a></div>
+<p id="finishedSaveStatus" role="status" aria-live="polite"></p>
+<p><strong>Ya podés cerrar esta pestaña.</strong></p>
+</section>
 <footer>Desafío Digital 60+ · Coaching Digital Silver<br/>Actividad educativa de práctica. No solicita contraseñas ni datos bancarios.</footer>
 </main>
 <script>
@@ -186,11 +194,14 @@ document.getElementById('quiz').addEventListener('reset',()=>setTimeout(()=>{
 },0));
 
 function showPart(){
- const second=location.hash==='#celular';
- document.getElementById('part1').hidden=second;
+ const second=location.hash==='#celular', finished=location.hash==='#final';
+ document.getElementById('part1').hidden=second||finished;
  document.getElementById('part2').hidden=!second;
- document.querySelectorAll('nav a').forEach(a=>{if(a.hash===(second?'#celular':'#juego'))a.setAttribute('aria-current','step');else a.removeAttribute('aria-current');});
+ document.getElementById('finished').hidden=!finished;
+ document.querySelector('nav[aria-label="Partes de la actividad"]').hidden=finished;
+ document.querySelectorAll('nav a').forEach(a=>{if(!finished&&a.hash===(second?'#celular':'#juego'))a.setAttribute('aria-current','step');else a.removeAttribute('aria-current');});
  window.scrollTo(0,0);
+ if(finished)document.getElementById('finishedTitle').focus({preventScroll:true});
 }
 window.addEventListener('hashchange',showPart);
 showPart();
@@ -214,6 +225,11 @@ document.getElementById('savePhoneBtn').addEventListener('click',()=>{
 document.getElementById('printPhoneBtn').addEventListener('click',()=>{
  document.getElementById('saveStatus').textContent='Si no se abre la ventana de impresión, usá el menú de tu navegador → Imprimir. En una computadora también podés presionar Ctrl+P (o Cmd+P en Mac).';
  window.print();
+});
+
+document.getElementById('saveFinishedBtn').addEventListener('click',()=>{
+ document.getElementById('savePhoneBtn').click();
+ document.getElementById('finishedSaveStatus').textContent=document.getElementById('saveStatus').textContent;
 });
 </script>
 </body>
