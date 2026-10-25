@@ -16,7 +16,7 @@ main{max-width:850px;margin:0 auto;padding:20px 14px 48px}.hero{background:var(-
 .consultation-content{padding-top:16px}.consultation-content h3{margin-top:22px}
 .consultation-table{width:100%;border-collapse:collapse;table-layout:fixed}
 .consultation-table th,.consultation-table td{text-align:left;padding:10px;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
-</style>
+.answer-summary{padding-left:26px}.summary-item{padding:14px 0;border-bottom:1px solid var(--line)}.summary-item p{margin:7px 0}.summary-status{font-weight:700;color:var(--blue)}#score{font-size:clamp(1.2rem,4vw,1.7rem)}</style>
 </head>
 <body>
 <main>
@@ -82,8 +82,8 @@ main{max-width:850px;margin:0 auto;padding:20px 14px 48px}.hero{background:var(-
 <div aria-live="polite" class="feedback"></div></section>
 <div class="actions"><button class="btn primary" id="resultsBtn" type="button">Terminar el juego y ver mi resumen</button><button class="btn secondary" id="resetBtn" type="reset">Volver a empezar</button></div>
 </form><section aria-live="polite" class="card hide" id="results">
-<h2>¡Terminaste el desafío!</h2><div class="score" id="score"></div><p id="encouragement"></p>
-<p>El resultado no es una nota ni una calificación: es una forma de ver qué temas ya conocés y cuáles podés seguir practicando.</p><p>¡Ya completaste esta actividad! Si tenés ganas, podés seguir con la segunda parte o volver otro día.</p>
+<h2>Tu resumen del desafío</h2><div class="score" id="score"></div><p id="encouragement"></p><h3>Tu recorrido, pregunta por pregunta</h3><ol id="answerSummary" class="answer-summary"></ol><p class="muted">Las explicaciones siguen junto a cada pregunta, para que puedas repasarlas cuando quieras.</p>
+<p>El resultado no es una nota ni una calificación: es una forma de ver qué temas ya conocés y cuáles podés seguir practicando.</p><p>Si tenés ganas, podés seguir con la segunda parte o volver otro día.</p>
 <div class="actions"><a class="btn primary" href="#celular">Quiero conocer mejor mi celular</a><p class="muted">Podés seguir ahora o volver otro día. Guardá el enlace de la parte 2 para retomarla.</p></div>
 </section></div><div hidden="" id="part2"><section class="card"><span class="pill">Parte 2 de 2</span><h2 tabindex="-1">Conozcamos tu celular</h2><p>Primero leé la explicación y después completá el dato de tu equipo. Podés hacerlo en varios momentos. Todos los campos son opcionales.</p><p class="muted">Esta ficha se mantiene mientras la página está abierta. Para conservarla, usá «Guardar mi ficha» para descargar un archivo de texto con tus datos. También podés imprimirla.</p><a href="#juego">← Volver al juego</a></section><section class="card"><div class=""><h3>1. Cómo encontrar la marca y el modelo</h3><p>La <strong>marca</strong> es la empresa que fabrica el equipo (por ejemplo, Samsung, Motorola, Xiaomi o Apple). El <strong>modelo</strong> identifica el equipo concreto (por ejemplo, Galaxy A15, Moto G54 o iPhone 11).</p><p><strong>En Android:</strong> buscá el ícono de Ajustes (parece un engranaje). Entrá y buscá “Acerca del teléfono”, “Información del teléfono” o un nombre parecido. Allí suelen figurar la marca, el nombre del dispositivo y/o el número de modelo.</p><p><strong>En iPhone:</strong> abrí Configuración → General → Información. Buscá “Nombre del modelo”. En esa pantalla también podés ver el número de modelo.</p><p><strong>Consejo:</strong> no cambies ninguna configuración; solo entrá a mirar. Después podés volver a la pantalla anterior.</p></div><div class="field"><label for="brandmodel">1. Marca y modelo</label><input id="brandmodel" placeholder="Ej.: Motorola Moto G54, Samsung Galaxy A15, iPhone 11..." type="text"/></div></section><section class="card"><div class=""><h3>2. Qué es el procesador y cómo averiguar cuál tiene</h3><p>El <strong>procesador</strong> ejecuta instrucciones y hace cálculos: es parecido al cerebro del celular. Influye en la rapidez con que responde y en las tareas que puede realizar, aunque la velocidad también depende de la memoria, el almacenamiento, el sistema y el estado del equipo.</p><p><strong>¿Dónde lo encuentro?</strong> Primero buscá la marca y el modelo con las indicaciones del punto anterior. En muchos celulares, el nombre del procesador <strong>no aparece en Ajustes</strong>. Con la marca y el modelo exactos, consultá las especificaciones técnicas en la página oficial del fabricante o pedí ayuda a alguien de confianza. En iPhone, Configuración → General → Información permite identificar el modelo, pero normalmente no muestra el nombre comercial del procesador.</p><p>No hace falta instalar una aplicación desconocida ni pagar para averiguarlo. Si no encontrás el dato, anotá “No lo encontré”. Es algo habitual: no significa que hayas hecho algo mal. Aun así, vale la pena saber qué es el procesador y qué función cumple.</p></div><div class="field"><label for="processor">2. Procesador</label><input id="processor" placeholder="Nombre del procesador o “no lo encontré”" type="text"/></div></section><section class="card"><div class=""><h3>3. Celular y computadora: piezas parecidas, funciones parecidas</h3><p>Si conocés algo de computadoras, esta comparación puede ayudarte. No son equipos idénticos, pero comparten conceptos:</p><table style="width:100%;border-collapse:collapse;margin:12px 0"><thead><tr><th style="text-align:left;border-bottom:2px solid var(--line);padding:8px">En el celular</th><th style="text-align:left;border-bottom:2px solid var(--line);padding:8px">En la computadora</th><th style="text-align:left;border-bottom:2px solid var(--line);padding:8px">¿Para qué sirve?</th></tr></thead><tbody><tr><td style="border-bottom:1px solid var(--line);padding:8px"><strong>Procesador</strong></td><td style="border-bottom:1px solid var(--line);padding:8px">Procesador</td><td style="border-bottom:1px solid var(--line);padding:8px">Ejecuta instrucciones y cálculos.</td></tr><tr><td style="border-bottom:1px solid var(--line);padding:8px"><strong>Memoria RAM</strong></td><td style="border-bottom:1px solid var(--line);padding:8px">Memoria RAM</td><td style="border-bottom:1px solid var(--line);padding:8px">Es el espacio de trabajo temporal de las aplicaciones abiertas.</td></tr><tr><td style="border-bottom:1px solid var(--line);padding:8px"><strong>Almacenamiento</strong></td><td style="border-bottom:1px solid var(--line);padding:8px">Disco o SSD</td><td style="border-bottom:1px solid var(--line);padding:8px">Guarda fotos, videos, aplicaciones y documentos.</td></tr><tr><td style="border-bottom:1px solid var(--line);padding:8px"><strong>Sistema operativo</strong></td><td style="border-bottom:1px solid var(--line);padding:8px">Windows, macOS o Linux</td><td style="border-bottom:1px solid var(--line);padding:8px">Administra el equipo y permite que funcionen las aplicaciones.</td></tr><tr><td style="padding:8px"><strong>Aplicaciones</strong></td><td style="padding:8px">Programas</td><td style="padding:8px">Permiten hacer tareas: mensajes, fotos, trámites, mapas, etc.</td></tr></tbody></table><p><strong>La diferencia clave entre las dos memorias:</strong> el almacenamiento conserva los archivos incluso cuando apagás el celular; la RAM es temporal y se usa mientras el sistema y las aplicaciones están trabajando. No son lo mismo.</p><p><strong>Para ver el almacenamiento:</strong> en Android, abrí Ajustes y buscá “Almacenamiento”. En iPhone, Configuración → General → Almacenamiento del iPhone. Allí podés ver el espacio usado y el disponible. La capacidad total puede ser, por ejemplo, 64 GB, 128 GB o 256 GB.</p><p><strong>¿Y la RAM?</strong> En muchos celulares no aparece fácilmente en los ajustes. Si no encontrás ese dato, podés dejarlo pendiente; para empezar, es más sencillo identificar la capacidad de almacenamiento.</p></div><div class="field"><label for="ram">3. Memoria RAM (si encontrás el dato)</label><input id="ram" placeholder="Ej.: 4 GB, 6 GB, 8 GB o “no lo encontré”" type="text"/></div><div class="field"><label>4. Capacidad de almacenamiento</label>
 <label class="option"><input name="storage" type="radio" value="32 GB"/> 32 GB</label>
@@ -141,17 +141,40 @@ document.querySelectorAll('.question input[type=radio]').forEach(input=>{
   fb.innerHTML='<strong>'+(correct?'¡Muy bien!':'¡Gracias por intentarlo!')+'</strong>'+ (correct?explanations[key].correct:explanations[key].wrong);
  });
 });
-document.getElementById('resultsBtn').addEventListener('click',()=>{
+
+function renderQuizSummary(){
+ const cards=Array.from(document.querySelectorAll('.question'));
  let answered=0,correct=0;
- document.querySelectorAll('.question').forEach(card=>{
+ const list=document.getElementById('answerSummary');
+ list.replaceChildren();
+ cards.forEach((card,index)=>{
   const chosen=card.querySelector('input:checked');
-  if(chosen){answered++;if(chosen.value===card.dataset.answer)correct++;}
+  const right=Boolean(chosen && chosen.value===card.dataset.answer);
+  if(chosen){answered++;if(right)correct++;}
+  const item=document.createElement('li');
+  item.className='summary-item';
+  const title=document.createElement('strong');
+  title.textContent=card.querySelector('legend').textContent;
+  const answer=document.createElement('p');
+  answer.textContent=chosen?'Tu respuesta: '+chosen.closest('label').textContent.trim():'Todavía no respondiste esta pregunta.';
+  const status=document.createElement('p');
+  status.className='summary-status';
+  status.textContent=!chosen?'Sin responder':right?'✓ Acierto':'Para seguir practicando';
+  item.append(title,answer,status);
+  list.appendChild(item);
  });
- document.getElementById('score').textContent=answered ? correct+' aciertos · '+answered+' de 8 preguntas respondidas' : 'Podés empezar cuando quieras';
- const msg=answered===0?'Todavía no elegiste respuestas. Podés empezar por cualquier pregunta; no hay apuro.':correct===answered?'¡Felicitaciones! Tus respuestas muestran que manejás muy bien estos temas. ¡Seguí practicando!':correct>=Math.ceil(answered/2)?'¡Buen trabajo! Ya tenés varios conocimientos. Podés repasar las explicaciones junto a cada pregunta.':'¡Gracias por animarte! Este desafío está para aprender, no para calificarte. Cada respuesta te ayuda a descubrir algo nuevo.';
- document.getElementById('encouragement').textContent=msg;
+ document.getElementById('score').textContent=correct+' aciertos · '+(answered-correct)+' para practicar · '+(cards.length-answered)+' sin responder';
+ const name=document.getElementById('name').value.trim();
+ document.getElementById('encouragement').textContent=(name?name+', ':'')+(answered===0?'podés empezar por cualquier pregunta; no hay apuro.':answered<cards.length?'este es tu avance hasta ahora. Podés completar las preguntas pendientes o continuar cuando quieras.':'¡gracias por participar! Cada respuesta es una oportunidad para aprender.');
+}
+
+document.getElementById('resultsBtn').addEventListener('click',()=>{
+ renderQuizSummary();
  document.getElementById('results').classList.remove('hide');
  document.getElementById('results').scrollIntoView({behavior:'smooth',block:'start'});
+});
+document.getElementById('quiz').addEventListener('change',()=>{
+ if(!document.getElementById('results').classList.contains('hide'))renderQuizSummary();
 });
 document.getElementById('resetBtn').addEventListener('click',()=>{
  document.querySelectorAll('.feedback').forEach(f=>{f.className='feedback';f.textContent='';});
