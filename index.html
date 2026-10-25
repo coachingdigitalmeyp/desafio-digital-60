@@ -1,14 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Desafío Digital 60+ | Coaching Digital Silver</title>
 <style>
 :root{--ink:#203447;--muted:#596b7a;--blue:#285b78;--pale:#edf5fa;--line:#d7e1e8;--good:#176b45;--goodbg:#e9f7ef;--bad:#8a4b16;--badbg:#fff3e4;--white:#fff}
 *{box-sizing:border-box}body{margin:0;background:#f4f7f9;color:var(--ink);font:18px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
 main{max-width:850px;margin:0 auto;padding:20px 14px 48px}.hero{background:var(--pale);border-radius:20px;padding:26px 22px;margin-bottom:18px}.eyebrow{font-size:.82rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}h1{font-size:clamp(2rem,6vw,3rem);line-height:1.1;margin:.3em 0}h2{font-size:1.45rem;margin:0 0 10px}h3{font-size:1.12rem;margin:0 0 8px}.card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:22px;margin:16px 0;box-shadow:0 2px 8px #20344708}.muted{color:var(--muted);font-size:.94rem}.field{margin:14px 0}.field label,.qtitle{display:block;font-weight:700;margin-bottom:7px}input[type=text],textarea{width:100%;padding:12px;border:1px solid #aebdc8;border-radius:9px;font:inherit;color:var(--ink)}textarea{min-height:76px}fieldset{border:0;padding:0;margin:0}legend{font-weight:750;margin-bottom:10px}.option{display:flex;gap:11px;align-items:flex-start;border:1px solid var(--line);border-radius:11px;padding:12px;margin:8px 0;cursor:pointer}.option:hover{background:#f7fafc}.option input{margin-top:7px;transform:scale(1.15)}.feedback{display:none;border-radius:10px;padding:13px 15px;margin-top:12px}.feedback.show{display:block}.feedback.good{background:var(--goodbg);color:#174e36}.feedback.try{background:var(--badbg);color:#66380f}.feedback strong{display:block;margin-bottom:4px}.btn{font:inherit;font-weight:700;border:0;border-radius:11px;padding:12px 18px;cursor:pointer}.primary{background:var(--blue);color:white}.secondary{background:#e9eef2;color:var(--ink)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.score{font-size:2rem;font-weight:800;color:var(--blue)}.guide-item{border-top:1px solid var(--line);padding:15px 0}.guide-item:first-of-type{border-top:0}.pill{display:inline-block;background:#e4edf3;border-radius:99px;padding:4px 10px;font-size:.82rem;font-weight:700}.hide{display:none!important}footer{color:var(--muted);font-size:.85rem;text-align:center;margin-top:25px}@media(max-width:520px){main{padding:12px 10px 32px}.hero,.card{padding:17px}.option{padding:10px}}
-</style>
+
+[hidden]{display:none!important}a.btn{display:inline-block;text-decoration:none}.btn:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid #a65c00;outline-offset:3px}table{font-size:.9rem;overflow-wrap:anywhere}th,td{vertical-align:top} @media print{header nav,.actions,#part1{display:none!important}#part2[hidden]{display:none!important}.card{break-inside:avoid;box-shadow:none}input,textarea{border:1px solid #aaa}}</style>
 </head>
 <body>
 <main>
@@ -16,120 +18,84 @@ main{max-width:850px;margin:0 auto;padding:20px 14px 48px}.hero{background:var(-
 <div class="eyebrow">Coaching Digital Silver · Actividad para aprender jugando</div>
 <h1>Desafío Digital 60+</h1>
 <p><strong>¿Cuánto conocés tu celular?</strong></p>
-<p>Este no es un examen. Es una oportunidad para descubrir lo que ya sabés y aprender algo nuevo. Elegí una respuesta y vas a recibir una explicación amable, tanto si acertás como si no.</p>
+<p>Dos actividades para hacer a tu ritmo: primero jugamos; después descubrimos los datos de tu celular.</p>
 <p class="muted">No necesitás crear una cuenta ni ingresar con Google. Tus respuestas quedan en esta página y no se envían automáticamente a nadie.</p>
-</header>
-
-<section class="card">
-<h2>¡Empecemos jugando!</h2>
+<nav aria-label="Partes de la actividad" class="actions"><a class="btn secondary" href="#juego">1 · Aprendamos jugando</a><a class="btn secondary" href="#celular">2 · Conozcamos tu celular</a></nav></header><div id="part1"><section class="card">
+<h2>Parte 1 · ¡Aprendamos jugando!</h2>
 <p>Respondé las preguntas a tu ritmo. No hace falta saberlo todo: después del juego vas a encontrar una guía sencilla para conocer mejor tu celular y completar tu ficha personal.</p>
 <p class="muted">No necesitás crear una cuenta ni ingresar con Google. Tus respuestas quedan en esta página y no se envían automáticamente a nadie.</p>
-<div class="field"><label for="name">Tu nombre o apodo (opcional)</label><input id="name" type="text" placeholder="¿Cómo te gusta que te llamen?"></div>
-</section>
-<form id="quiz">
+<div class="field"><label for="name">Tu nombre o apodo (opcional)</label><input id="name" placeholder="¿Cómo te gusta que te llamen?" type="text"/></div>
+</section><form id="quiz">
 <section class="card question" data-answer="family">
 <fieldset><legend>Pregunta 1 de 8 · Dos grandes familias</legend><p class="qtitle">¿Cuáles son los dos sistemas principales que encontramos en los celulares actuales?</p>
-<label class="option"><input type="radio" name="q1" value="family"> Android y iOS (el sistema del iPhone)</label>
-<label class="option"><input type="radio" name="q1" value="windows"> Windows y calculadora</label>
-<label class="option"><input type="radio" name="q1" value="apps"> WhatsApp y YouTube</label></fieldset>
-<div class="feedback" aria-live="polite"></div></section>
-
+<label class="option"><input name="q1" type="radio" value="family"/> Android y iOS (el sistema del iPhone)</label>
+<label class="option"><input name="q1" type="radio" value="windows"/> Windows y calculadora</label>
+<label class="option"><input name="q1" type="radio" value="apps"/> WhatsApp y YouTube</label></fieldset>
+<div aria-live="polite" class="feedback"></div></section>
 <section class="card question" data-answer="memory">
 <fieldset><legend>Pregunta 2 de 8 · La memoria del celular</legend><p class="qtitle">¿Qué guarda la memoria de almacenamiento?</p>
-<label class="option"><input type="radio" name="q2" value="memory"> Fotos, videos, aplicaciones y archivos</label>
-<label class="option"><input type="radio" name="q2" value="battery"> La electricidad de la batería</label>
-<label class="option"><input type="radio" name="q2" value="signal"> La señal de la compañía telefónica</label></fieldset>
-<div class="feedback" aria-live="polite"></div></section>
-
+<label class="option"><input name="q2" type="radio" value="memory"/> Fotos, videos, aplicaciones y archivos</label>
+<label class="option"><input name="q2" type="radio" value="battery"/> La electricidad de la batería</label>
+<label class="option"><input name="q2" type="radio" value="signal"/> La señal de la compañía telefónica</label></fieldset>
+<div aria-live="polite" class="feedback"></div></section>
 <section class="card question" data-answer="brain">
 <fieldset><legend>Pregunta 3 de 8 · El cerebro del equipo</legend><p class="qtitle">¿Qué hace principalmente el procesador?</p>
-<label class="option"><input type="radio" name="q3" value="brain"> Ejecuta instrucciones y realiza cálculos</label>
-<label class="option"><input type="radio" name="q3" value="save"> Guarda todas las fotos para siempre</label>
-<label class="option"><input type="radio" name="q3" value="protect"> Protege físicamente la pantalla</label></fieldset>
-<div class="feedback" aria-live="polite"></div></section>
-
+<label class="option"><input name="q3" type="radio" value="brain"/> Ejecuta instrucciones y realiza cálculos</label>
+<label class="option"><input name="q3" type="radio" value="save"/> Guarda todas las fotos para siempre</label>
+<label class="option"><input name="q3" type="radio" value="protect"/> Protege físicamente la pantalla</label></fieldset>
+<div aria-live="polite" class="feedback"></div></section>
 <section class="card question" data-answer="video">
 <fieldset><legend>Pregunta 4 de 8 · ¡Luces, cámara, acción!</legend><p class="qtitle">¿Cuál es una buena secuencia para grabar un video?</p>
-<label class="option"><input type="radio" name="q4" value="video"> Abrir Cámara → elegir Video → tocar Grabar → tocar Detener al terminar</label>
-<label class="option"><input type="radio" name="q4" value="delete"> Borrar fotos → apagar el celular → esperar</label>
-<label class="option"><input type="radio" name="q4" value="gallery"> Abrir Galería → eliminar un video → cerrar todo</label></fieldset>
-<div class="feedback" aria-live="polite"></div></section>
-
+<label class="option"><input name="q4" type="radio" value="video"/> Abrir Cámara → elegir Video → tocar Grabar → tocar Detener al terminar</label>
+<label class="option"><input name="q4" type="radio" value="delete"/> Borrar fotos → apagar el celular → esperar</label>
+<label class="option"><input name="q4" type="radio" value="gallery"/> Abrir Galería → eliminar un video → cerrar todo</label></fieldset>
+<div aria-live="polite" class="feedback"></div></section>
 <section class="card question" data-answer="camera">
 <fieldset><legend>Pregunta 5 de 8 · Un recuerdo familiar</legend><p class="qtitle">¿Qué aplicación usarías para sacar una foto o filmar a tus nietos?</p>
-<label class="option"><input type="radio" name="q5" value="clock"> Reloj</label>
-<label class="option"><input type="radio" name="q5" value="camera"> Cámara</label>
-<label class="option"><input type="radio" name="q5" value="calculator"> Calculadora</label></fieldset>
-<div class="feedback" aria-live="polite"></div></section>
-
+<label class="option"><input name="q5" type="radio" value="clock"/> Reloj</label>
+<label class="option"><input name="q5" type="radio" value="camera"/> Cámara</label>
+<label class="option"><input name="q5" type="radio" value="calculator"/> Calculadora</label></fieldset>
+<div aria-live="polite" class="feedback"></div></section>
 <section class="card question" data-answer="apps">
 <fieldset><legend>Pregunta 6 de 8 · ¿Para qué sirve cada aplicación?</legend><p class="qtitle">¿Cuál se utiliza principalmente para enviar mensajes y hacer videollamadas?</p>
-<label class="option"><input type="radio" name="q6" value="maps"> Google Maps</label>
-<label class="option"><input type="radio" name="q6" value="apps"> WhatsApp</label>
-<label class="option"><input type="radio" name="q6" value="camera"> Cámara</label></fieldset>
-<div class="feedback" aria-live="polite"></div></section>
-
+<label class="option"><input name="q6" type="radio" value="maps"/> Google Maps</label>
+<label class="option"><input name="q6" type="radio" value="apps"/> WhatsApp</label>
+<label class="option"><input name="q6" type="radio" value="camera"/> Cámara</label></fieldset>
+<div aria-live="polite" class="feedback"></div></section>
 <section class="card question" data-answer="storage">
 <fieldset><legend>Pregunta 7 de 8 · ¡No queda espacio!</legend><p class="qtitle">El celular avisa que queda poco espacio. ¿Qué significa, generalmente?</p>
-<label class="option"><input type="radio" name="q7" value="storage"> El almacenamiento está lleno o casi lleno</label>
-<label class="option"><input type="radio" name="q7" value="broken"> El celular está necesariamente roto</label>
-<label class="option"><input type="radio" name="q7" value="internet"> Internet dejó de funcionar en todo el mundo</label></fieldset>
-<div class="feedback" aria-live="polite"></div></section>
-
+<label class="option"><input name="q7" type="radio" value="storage"/> El almacenamiento está lleno o casi lleno</label>
+<label class="option"><input name="q7" type="radio" value="broken"/> El celular está necesariamente roto</label>
+<label class="option"><input name="q7" type="radio" value="internet"/> Internet dejó de funcionar en todo el mundo</label></fieldset>
+<div aria-live="polite" class="feedback"></div></section>
 <section class="card question" data-answer="safe">
 <fieldset><legend>Pregunta 8 de 8 · Cuidemos nuestros datos</legend><p class="qtitle">Un mensaje dice que tu banco bloqueará la cuenta y te pide entrar urgentemente en un enlace. ¿Qué hacés?</p>
-<label class="option"><input type="radio" name="q8" value="safe"> No abro el enlace y verifico por un canal oficial del banco</label>
-<label class="option"><input type="radio" name="q8" value="share"> Lo reenvío a todos mis contactos</label>
-<label class="option"><input type="radio" name="q8" value="password"> Entro rápido y escribo mis claves</label></fieldset>
-<div class="feedback" aria-live="polite"></div></section>
-
-<div class="actions"><button class="btn primary" type="button" id="resultsBtn">Ver mi resumen final</button><button class="btn secondary" type="reset" id="resetBtn">Volver a empezar</button></div>
-</form>
-
-<section class="card hide" id="results" aria-live="polite">
+<label class="option"><input name="q8" type="radio" value="safe"/> No abro el enlace y verifico por un canal oficial del banco</label>
+<label class="option"><input name="q8" type="radio" value="share"/> Lo reenvío a todos mis contactos</label>
+<label class="option"><input name="q8" type="radio" value="password"/> Entro rápido y escribo mis claves</label></fieldset>
+<div aria-live="polite" class="feedback"></div></section>
+<div class="actions"><button class="btn primary" id="resultsBtn" type="button">Terminar el juego y ver mi resumen</button><button class="btn secondary" id="resetBtn" type="reset">Volver a empezar</button></div>
+</form><section aria-live="polite" class="card hide" id="results">
 <h2>¡Terminaste el desafío!</h2><div class="score" id="score"></div><p id="encouragement"></p>
-<p>El resultado no es una nota ni una calificación: es una forma de ver qué temas ya conocés y cuáles podés seguir practicando.</p><p>Ahora podés leer la guía y completar tu ficha personal más abajo.</p>
-<div class="actions"><button class="btn primary" type="button" onclick="window.print()">Imprimir o guardar esta guía</button></div>
-</section>
-
-<section class="card" id="guide">
-<h2>Guía de consulta: conozcamos mejor el celular</h2>
-<p>Podés volver a esta sección cuando quieras. Los nombres de los menús pueden variar un poco según la marca y la versión del sistema.</p>
-<div class="guide-item"><h3>1. Cómo encontrar la marca y el modelo</h3><p>La <strong>marca</strong> es la empresa que fabrica el equipo (por ejemplo, Samsung, Motorola, Xiaomi o Apple). El <strong>modelo</strong> identifica el equipo concreto (por ejemplo, Galaxy A15, Moto G54 o iPhone 11).</p><p><strong>En Android:</strong> buscá el ícono de Ajustes (parece un engranaje). Entrá y buscá “Acerca del teléfono”, “Información del teléfono” o un nombre parecido. Allí suelen figurar la marca, el nombre del dispositivo y/o el número de modelo.</p><p><strong>En iPhone:</strong> abrí Configuración → General → Información. Buscá “Nombre del modelo”. En esa pantalla también podés ver el número de modelo.</p><p><strong>Consejo:</strong> no cambies ninguna configuración; solo entrá a mirar. Después podés volver a la pantalla anterior.</p></div>
-<div class="guide-item"><h3>2. Qué es el procesador y cómo averiguar cuál tiene</h3><p>El <strong>procesador</strong> ejecuta instrucciones y hace cálculos: es parecido al cerebro del celular. Influye en la rapidez con que responde y en las tareas que puede realizar, aunque la velocidad también depende de la memoria, el almacenamiento, el sistema y el estado del equipo.</p><p><strong>¿Dónde lo encuentro?</strong> Primero buscá la marca y el modelo con las indicaciones del punto anterior. En muchos celulares, el nombre del procesador <strong>no aparece en Ajustes</strong>. Con la marca y el modelo exactos, consultá las especificaciones técnicas en la página oficial del fabricante o pedí ayuda a alguien de confianza. En iPhone, Configuración → General → Información permite identificar el modelo, pero normalmente no muestra el nombre comercial del procesador.</p><p>No hace falta instalar una aplicación desconocida ni pagar para averiguarlo. Si no encontrás el dato, anotá “No lo encontré”. Es algo habitual: no significa que hayas hecho algo mal. Aun así, vale la pena saber qué es el procesador y qué función cumple.</p></div>
-<div class="guide-item"><h3>3. Celular y computadora: piezas parecidas, funciones parecidas</h3><p>Si conocés algo de computadoras, esta comparación puede ayudarte. No son equipos idénticos, pero comparten conceptos:</p><table style="width:100%;border-collapse:collapse;margin:12px 0"><thead><tr><th style="text-align:left;border-bottom:2px solid var(--line);padding:8px">En el celular</th><th style="text-align:left;border-bottom:2px solid var(--line);padding:8px">En la computadora</th><th style="text-align:left;border-bottom:2px solid var(--line);padding:8px">¿Para qué sirve?</th></tr></thead><tbody><tr><td style="border-bottom:1px solid var(--line);padding:8px"><strong>Procesador</strong></td><td style="border-bottom:1px solid var(--line);padding:8px">Procesador</td><td style="border-bottom:1px solid var(--line);padding:8px">Ejecuta instrucciones y cálculos.</td></tr><tr><td style="border-bottom:1px solid var(--line);padding:8px"><strong>Memoria RAM</strong></td><td style="border-bottom:1px solid var(--line);padding:8px">Memoria RAM</td><td style="border-bottom:1px solid var(--line);padding:8px">Es el espacio de trabajo temporal de las aplicaciones abiertas.</td></tr><tr><td style="border-bottom:1px solid var(--line);padding:8px"><strong>Almacenamiento</strong></td><td style="border-bottom:1px solid var(--line);padding:8px">Disco o SSD</td><td style="border-bottom:1px solid var(--line);padding:8px">Guarda fotos, videos, aplicaciones y documentos.</td></tr><tr><td style="border-bottom:1px solid var(--line);padding:8px"><strong>Sistema operativo</strong></td><td style="border-bottom:1px solid var(--line);padding:8px">Windows, macOS o Linux</td><td style="border-bottom:1px solid var(--line);padding:8px">Administra el equipo y permite que funcionen las aplicaciones.</td></tr><tr><td style="padding:8px"><strong>Aplicaciones</strong></td><td style="padding:8px">Programas</td><td style="padding:8px">Permiten hacer tareas: mensajes, fotos, trámites, mapas, etc.</td></tr></tbody></table><p><strong>La diferencia clave entre las dos memorias:</strong> el almacenamiento conserva los archivos incluso cuando apagás el celular; la RAM es temporal y se usa mientras el sistema y las aplicaciones están trabajando. No son lo mismo.</p><p><strong>Para ver el almacenamiento:</strong> en Android, abrí Ajustes y buscá “Almacenamiento”. En iPhone, Configuración → General → Almacenamiento del iPhone. Allí podés ver el espacio usado y el disponible. La capacidad total puede ser, por ejemplo, 64 GB, 128 GB o 256 GB.</p><p><strong>¿Y la RAM?</strong> En muchos celulares no aparece fácilmente en los ajustes. Si no encontrás ese dato, podés dejarlo pendiente; para empezar, es más sencillo identificar la capacidad de almacenamiento.</p></div>
-<div class="guide-item"><h3>4. Cómo reconocer si tengo Android o iPhone</h3><p>Si el teléfono dice iPhone y fue fabricado por Apple, usa iOS. Si es de marcas como Samsung, Motorola o Xiaomi, normalmente usa Android. También podés mirar la pantalla de Ajustes: en iPhone se llama “Configuración” y tiene las secciones General y Apple ID; en Android suele llamarse “Ajustes”. Los menús pueden variar según la marca.</p></div>
-<div class="guide-item"><h3>5. ¿Cómo grabo un video?</h3><ol><li>Buscá y abrí la aplicación Cámara.</li><li>Elegí la opción Video, si no está seleccionada.</li><li>Apuntá el celular hacia lo que querés filmar y mantenelo lo más firme posible.</li><li>Tocá el botón de grabación.</li><li>Cuando termines, tocá el botón para detener.</li><li>Buscá el video en Fotos o Galería para verlo.</li></ol><p>Los botones cambian de lugar según el celular. Si no encontrás alguno, no hace falta tocar al azar: podés pedir ayuda o consultar las instrucciones de tu modelo.</p></div>
-<div class="guide-item"><h3>6. ¿Qué es una aplicación?</h3><p>Es un programa que permite realizar una tarea. Por ejemplo, WhatsApp sirve para mensajes y llamadas; Cámara, para fotos y videos; Google Maps, para mapas y recorridos; YouTube, para ver videos. Algunas aplicaciones vienen instaladas y otras se pueden instalar desde la tienda oficial.</p></div>
-<div class="guide-item"><h3>7. ¿Qué hago si se llena el almacenamiento?</h3><p>Revisá qué ocupa espacio. Antes de borrar fotos, videos o conversaciones, comprobá si querés conservarlos y si tenés una copia. No instales aplicaciones que prometan “limpiar todo” sin verificar que sean confiables.</p></div>
-<div class="guide-item"><h3>8. ¿Cómo me protejo de mensajes falsos?</h3><p>Desconfiá de los mensajes que meten miedo o apuran para que actúes. No compartas contraseñas, códigos de verificación ni datos bancarios desde un enlace recibido. Abrí la aplicación oficial por tu cuenta o llamá al número que figura en la tarjeta o en la web oficial del banco.</p></div>
-<div class="guide-item"><h3>9. Un consejo para aprender sin frustrarse</h3><p>Elegí una sola función, practicá despacio y repetila. Si algo sale distinto, no significa que hayas roto el celular. Podés volver atrás, leer el mensaje en pantalla y pedir orientación. Aprender tecnología lleva práctica, a cualquier edad.</p></div>
-</section>
-
-<section class="card" id="myphone">
-<h2>Ahora sí: conozcamos tu celular</h2>
-<p>¡Llegó el momento de investigar! Leé cada indicación y, si tenés el celular a mano, seguí los pasos. Si no encontrás un dato, dejalo pendiente: no hay apuro.</p>
-<div class="field"><label for="brandmodel">1. Marca y modelo</label><input id="brandmodel" type="text" placeholder="Ej.: Motorola Moto G54, Samsung Galaxy A15, iPhone 11..."><p class="muted">Más abajo, en la guía, te indicamos dónde buscarlo.</p></div>
-<div class="field"><label for="processor">2. Procesador</label><input id="processor" type="text" placeholder="Nombre del procesador o “no lo encontré”"><p class="muted">Es una parte fundamental. La guía explica cómo buscarlo; muchas veces no aparece directamente en Ajustes.</p></div>
-<div class="field"><label for="ram">3. Memoria RAM (si encontrás el dato)</label><input id="ram" type="text" placeholder="Ej.: 4 GB, 6 GB, 8 GB o “no lo encontré”"><p class="muted">Es la memoria de trabajo temporal, distinta del espacio donde se guardan fotos y aplicaciones.</p></div>
-<div class="field"><label>4. Capacidad de almacenamiento</label>
-<label class="option"><input type="radio" name="storage" value="32 GB"> 32 GB</label>
-<label class="option"><input type="radio" name="storage" value="64 GB"> 64 GB</label>
-<label class="option"><input type="radio" name="storage" value="128 GB"> 128 GB</label>
-<label class="option"><input type="radio" name="storage" value="256 GB o más"> 256 GB o más</label>
-<label class="option"><input type="radio" name="storage" value="Otra capacidad"> Otra capacidad</label>
-<label class="option"><input type="radio" name="storage" value="No lo encontré"> No lo encontré todavía</label>
-</div>
-<div class="field"><label for="myapps">5. Tres aplicaciones que uso</label><textarea id="myapps" placeholder="Ej.: WhatsApp, YouTube, Mercado Pago..."></textarea></div>
-<div class="field"><label for="system">6. Mi celular usa...</label>
-<label class="option"><input type="radio" name="system" value="Android"> Android (por ejemplo, Samsung, Motorola o Xiaomi)</label>
-<label class="option"><input type="radio" name="system" value="iOS"> iOS (iPhone)</label>
-<label class="option"><input type="radio" name="system" value="No sé todavía"> Todavía no estoy seguro/a</label></div>
-<p class="muted">Esta ficha se completa en tu dispositivo mientras la página está abierta. No se envía automáticamente ni se guarda en una base de datos.</p>
-</section>
+<p>El resultado no es una nota ni una calificación: es una forma de ver qué temas ya conocés y cuáles podés seguir practicando.</p><p>¡Ya completaste esta actividad! Si tenés ganas, podés seguir con la segunda parte o volver otro día.</p>
+<div class="actions"><a class="btn primary" href="#celular">Quiero conocer mejor mi celular</a><p class="muted">Podés seguir ahora o volver otro día. Guardá el enlace de la parte 2 para retomarla.</p></div>
+</section></div><div hidden="" id="part2"><section class="card"><span class="pill">Parte 2 de 2</span><h2 tabindex="-1">Conozcamos tu celular</h2><p>Primero leé la explicación y después completá el dato de tu equipo. Podés hacerlo en varios momentos. Todos los campos son opcionales.</p><p class="muted">Esta ficha se mantiene mientras la página está abierta. Para conservarla, usá «Guardar mi ficha» para descargar un archivo de texto con tus datos. También podés imprimirla.</p><a href="#juego">← Volver al juego</a></section><section class="card"><div class=""><h3>1. Cómo encontrar la marca y el modelo</h3><p>La <strong>marca</strong> es la empresa que fabrica el equipo (por ejemplo, Samsung, Motorola, Xiaomi o Apple). El <strong>modelo</strong> identifica el equipo concreto (por ejemplo, Galaxy A15, Moto G54 o iPhone 11).</p><p><strong>En Android:</strong> buscá el ícono de Ajustes (parece un engranaje). Entrá y buscá “Acerca del teléfono”, “Información del teléfono” o un nombre parecido. Allí suelen figurar la marca, el nombre del dispositivo y/o el número de modelo.</p><p><strong>En iPhone:</strong> abrí Configuración → General → Información. Buscá “Nombre del modelo”. En esa pantalla también podés ver el número de modelo.</p><p><strong>Consejo:</strong> no cambies ninguna configuración; solo entrá a mirar. Después podés volver a la pantalla anterior.</p></div><div class="field"><label for="brandmodel">1. Marca y modelo</label><input id="brandmodel" placeholder="Ej.: Motorola Moto G54, Samsung Galaxy A15, iPhone 11..." type="text"/></div></section><section class="card"><div class=""><h3>2. Qué es el procesador y cómo averiguar cuál tiene</h3><p>El <strong>procesador</strong> ejecuta instrucciones y hace cálculos: es parecido al cerebro del celular. Influye en la rapidez con que responde y en las tareas que puede realizar, aunque la velocidad también depende de la memoria, el almacenamiento, el sistema y el estado del equipo.</p><p><strong>¿Dónde lo encuentro?</strong> Primero buscá la marca y el modelo con las indicaciones del punto anterior. En muchos celulares, el nombre del procesador <strong>no aparece en Ajustes</strong>. Con la marca y el modelo exactos, consultá las especificaciones técnicas en la página oficial del fabricante o pedí ayuda a alguien de confianza. En iPhone, Configuración → General → Información permite identificar el modelo, pero normalmente no muestra el nombre comercial del procesador.</p><p>No hace falta instalar una aplicación desconocida ni pagar para averiguarlo. Si no encontrás el dato, anotá “No lo encontré”. Es algo habitual: no significa que hayas hecho algo mal. Aun así, vale la pena saber qué es el procesador y qué función cumple.</p></div><div class="field"><label for="processor">2. Procesador</label><input id="processor" placeholder="Nombre del procesador o “no lo encontré”" type="text"/></div></section><section class="card"><div class=""><h3>3. Celular y computadora: piezas parecidas, funciones parecidas</h3><p>Si conocés algo de computadoras, esta comparación puede ayudarte. No son equipos idénticos, pero comparten conceptos:</p><table style="width:100%;border-collapse:collapse;margin:12px 0"><thead><tr><th style="text-align:left;border-bottom:2px solid var(--line);padding:8px">En el celular</th><th style="text-align:left;border-bottom:2px solid var(--line);padding:8px">En la computadora</th><th style="text-align:left;border-bottom:2px solid var(--line);padding:8px">¿Para qué sirve?</th></tr></thead><tbody><tr><td style="border-bottom:1px solid var(--line);padding:8px"><strong>Procesador</strong></td><td style="border-bottom:1px solid var(--line);padding:8px">Procesador</td><td style="border-bottom:1px solid var(--line);padding:8px">Ejecuta instrucciones y cálculos.</td></tr><tr><td style="border-bottom:1px solid var(--line);padding:8px"><strong>Memoria RAM</strong></td><td style="border-bottom:1px solid var(--line);padding:8px">Memoria RAM</td><td style="border-bottom:1px solid var(--line);padding:8px">Es el espacio de trabajo temporal de las aplicaciones abiertas.</td></tr><tr><td style="border-bottom:1px solid var(--line);padding:8px"><strong>Almacenamiento</strong></td><td style="border-bottom:1px solid var(--line);padding:8px">Disco o SSD</td><td style="border-bottom:1px solid var(--line);padding:8px">Guarda fotos, videos, aplicaciones y documentos.</td></tr><tr><td style="border-bottom:1px solid var(--line);padding:8px"><strong>Sistema operativo</strong></td><td style="border-bottom:1px solid var(--line);padding:8px">Windows, macOS o Linux</td><td style="border-bottom:1px solid var(--line);padding:8px">Administra el equipo y permite que funcionen las aplicaciones.</td></tr><tr><td style="padding:8px"><strong>Aplicaciones</strong></td><td style="padding:8px">Programas</td><td style="padding:8px">Permiten hacer tareas: mensajes, fotos, trámites, mapas, etc.</td></tr></tbody></table><p><strong>La diferencia clave entre las dos memorias:</strong> el almacenamiento conserva los archivos incluso cuando apagás el celular; la RAM es temporal y se usa mientras el sistema y las aplicaciones están trabajando. No son lo mismo.</p><p><strong>Para ver el almacenamiento:</strong> en Android, abrí Ajustes y buscá “Almacenamiento”. En iPhone, Configuración → General → Almacenamiento del iPhone. Allí podés ver el espacio usado y el disponible. La capacidad total puede ser, por ejemplo, 64 GB, 128 GB o 256 GB.</p><p><strong>¿Y la RAM?</strong> En muchos celulares no aparece fácilmente en los ajustes. Si no encontrás ese dato, podés dejarlo pendiente; para empezar, es más sencillo identificar la capacidad de almacenamiento.</p></div><div class="field"><label for="ram">3. Memoria RAM (si encontrás el dato)</label><input id="ram" placeholder="Ej.: 4 GB, 6 GB, 8 GB o “no lo encontré”" type="text"/></div><div class="field"><label>4. Capacidad de almacenamiento</label>
+<label class="option"><input name="storage" type="radio" value="32 GB"/> 32 GB</label>
+<label class="option"><input name="storage" type="radio" value="64 GB"/> 64 GB</label>
+<label class="option"><input name="storage" type="radio" value="128 GB"/> 128 GB</label>
+<label class="option"><input name="storage" type="radio" value="256 GB o más"/> 256 GB o más</label>
+<label class="option"><input name="storage" type="radio" value="Otra capacidad"/> Otra capacidad</label>
+<label class="option"><input name="storage" type="radio" value="No lo encontré"/> No lo encontré todavía</label>
+</div></section><section class="card"><div class=""><h3>4. Cómo reconocer si tengo Android o iPhone</h3><p>Si el teléfono dice iPhone y fue fabricado por Apple, usa iOS. Si es de marcas como Samsung, Motorola o Xiaomi, normalmente usa Android. También podés mirar la pantalla de Ajustes: en iPhone se llama “Configuración” y tiene las secciones General y Apple ID; en Android suele llamarse “Ajustes”. Los menús pueden variar según la marca.</p></div><div class="field"><label for="system">6. Mi celular usa...</label>
+<label class="option"><input name="system" type="radio" value="Android"/> Android (por ejemplo, Samsung, Motorola o Xiaomi)</label>
+<label class="option"><input name="system" type="radio" value="iOS"/> iOS (iPhone)</label>
+<label class="option"><input name="system" type="radio" value="No sé todavía"/> Todavía no estoy seguro/a</label></div></section><section class="card"><div class=""><h3>6. ¿Qué es una aplicación?</h3><p>Es un programa que permite realizar una tarea. Por ejemplo, WhatsApp sirve para mensajes y llamadas; Cámara, para fotos y videos; Google Maps, para mapas y recorridos; YouTube, para ver videos. Algunas aplicaciones vienen instaladas y otras se pueden instalar desde la tienda oficial.</p></div><div class="field"><label for="myapps">5. Tres aplicaciones que uso</label><textarea id="myapps" placeholder="Ej.: WhatsApp, YouTube, Mercado Pago..."></textarea></div></section><section class="card"><h2>¡Cada dato que descubriste es un avance!</h2><p>Lo que quedó pendiente podés investigarlo con ayuda en otro momento.</p><div class="actions"><button class="btn primary" id="savePhoneBtn" type="button">Guardar mi ficha</button><button class="btn secondary" id="printPhoneBtn" type="button">Imprimir mi ficha</button><p id="saveStatus" role="status" aria-live="polite"></p><a class="btn secondary" href="#juego">Volver al juego</a></div></section></div>
 
 
-<footer>Desafío Digital 60+ · Coaching Digital Silver<br>Actividad educativa de práctica. No solicita contraseñas ni datos bancarios.</footer>
+
+
+
+<footer>Desafío Digital 60+ · Coaching Digital Silver<br/>Actividad educativa de práctica. No solicita contraseñas ni datos bancarios.</footer>
 </main>
 <script>
 const explanations = {
@@ -156,8 +122,8 @@ document.getElementById('resultsBtn').addEventListener('click',()=>{
   const chosen=card.querySelector('input:checked');
   if(chosen){answered++;if(chosen.value===card.dataset.answer)correct++;}
  });
- document.getElementById('score').textContent=correct+' de '+answered+' respuestas correctas';
- const msg=answered===0?'Todavía no elegiste respuestas. Podés empezar por cualquier pregunta; no hay apuro.':correct===answered?'¡Felicitaciones! Tus respuestas muestran que manejás muy bien estos temas. ¡Seguí practicando!':correct>=Math.ceil(answered/2)?'¡Buen trabajo! Ya tenés varios conocimientos. Leé las explicaciones de las preguntas y usá la guía como apoyo.':'¡Gracias por animarte! Este desafío está para aprender, no para calificarte. Las explicaciones y la guía son parte importante de la actividad.';
+ document.getElementById('score').textContent=answered ? correct+' aciertos · '+answered+' de 8 preguntas respondidas' : 'Podés empezar cuando quieras';
+ const msg=answered===0?'Todavía no elegiste respuestas. Podés empezar por cualquier pregunta; no hay apuro.':correct===answered?'¡Felicitaciones! Tus respuestas muestran que manejás muy bien estos temas. ¡Seguí practicando!':correct>=Math.ceil(answered/2)?'¡Buen trabajo! Ya tenés varios conocimientos. Podés repasar las explicaciones junto a cada pregunta.':'¡Gracias por animarte! Este desafío está para aprender, no para calificarte. Cada respuesta te ayuda a descubrir algo nuevo.';
  document.getElementById('encouragement').textContent=msg;
  document.getElementById('results').classList.remove('hide');
  document.getElementById('results').scrollIntoView({behavior:'smooth',block:'start'});
@@ -170,6 +136,37 @@ document.getElementById('quiz').addEventListener('reset',()=>setTimeout(()=>{
  document.querySelectorAll('.feedback').forEach(f=>{f.className='feedback';f.textContent='';});
  document.getElementById('results').classList.add('hide');
 },0));
+
+function showPart(){
+ const second=location.hash==='#celular';
+ document.getElementById('part1').hidden=second;
+ document.getElementById('part2').hidden=!second;
+ document.querySelectorAll('nav a').forEach(a=>{if(a.hash===(second?'#celular':'#juego'))a.setAttribute('aria-current','step');else a.removeAttribute('aria-current');});
+ window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',showPart);
+showPart();
+
+function phoneText(){
+ const field=id=>document.getElementById(id).value.trim()||'Pendiente';
+ const choice=name=>document.querySelector('input[name="'+name+'"]:checked')?.value||'Pendiente';
+ return ['MI FICHA DEL CELULAR','Desafío Digital 60+ · Coaching Digital Silver','',
+ 'Nombre: '+field('name'),'Marca y modelo: '+field('brandmodel'),
+ 'Procesador: '+field('processor'),'Memoria RAM: '+field('ram'),
+ 'Almacenamiento: '+choice('storage'),'Sistema: '+choice('system'),
+ 'Aplicaciones que uso: '+field('myapps'),'','Cada dato descubierto es un avance. Podés completar lo pendiente otro día.'].join('\n');
+}
+document.getElementById('savePhoneBtn').addEventListener('click',()=>{
+ const blob=new Blob(['\ufeff'+phoneText()],{type:'text/plain;charset=utf-8'});
+ const url=URL.createObjectURL(blob),link=document.createElement('a');
+ link.href=url;link.download='Mi_ficha_del_celular.txt';document.body.appendChild(link);link.click();link.remove();
+ setTimeout(()=>URL.revokeObjectURL(url),60000);
+ document.getElementById('saveStatus').textContent='Se solicitó la descarga de Mi_ficha_del_celular.txt. Buscalo en Descargas. Si no aparece, abrí esta página en Chrome o Safari y volvé a intentarlo.';
+});
+document.getElementById('printPhoneBtn').addEventListener('click',()=>{
+ document.getElementById('saveStatus').textContent='Si no se abre la ventana de impresión, usá el menú de tu navegador → Imprimir. En una computadora también podés presionar Ctrl+P (o Cmd+P en Mac).';
+ window.print();
+});
 </script>
 </body>
 </html>
