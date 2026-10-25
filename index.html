@@ -126,7 +126,7 @@ main{max-width:850px;margin:0 auto;padding:20px 14px 48px}.hero{background:var(-
 <p>Terminaste «Aprendamos jugando». Cada respuesta fue una oportunidad para aprender.</p>
 <p>Podés dejar la segunda parte para otro día. No hace falta continuar ahora.</p>
 <p><strong>Ya podés cerrar esta pestaña.</strong></p>
-<div class="actions"><button class="btn secondary" type="button" id="backToSummaryBtn">Volver a mi resumen</button><a class="btn primary" href="#celular">Quiero conocer mi celular</a></div>
+
 </section>
 <section class="card" id="finished" hidden aria-labelledby="finishedTitle">
 <h2 id="finishedTitle" tabindex="-1">¡Gracias por participar!</h2>
@@ -241,13 +241,6 @@ document.getElementById('saveFinishedBtn').addEventListener('click',()=>{
  document.getElementById('finishedSaveStatus').textContent=document.getElementById('saveStatus').textContent;
 });
 
-document.getElementById('backToSummaryBtn').addEventListener('click',()=>{
- location.hash='#juego';
- requestAnimationFrame(()=>{
-  document.getElementById('results').classList.remove('hide');
-  document.getElementById('results').scrollIntoView({behavior:'smooth',block:'start'});
- });
-});
 </script>
 </body>
 </html>
